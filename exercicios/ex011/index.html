@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dianâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes u simplesmente aumente e diminua o tamanho do seu navegardor</p>
+
+    <picture><!--Usando o "Max-width:" colocar em ordem crescente as versões da imagem-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reporduzir áudio em HTML5</p>
+    <audio src="midia/cartoon-song.mp3" controls autoplay></audio>
+    <!--Principais tipos de arquivo de audio MP3 WAV OGG-->
+    <h1>Reproduzindo aduio de diferentes tipos de arquivo</h1>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/HK-OST-Dirtmouth.mp3" type="audio/mpeg"><!--para audios MP#-->
+        <source src="midia/HK-OST-Dirtmouth.ogg" type="audio/ogg"><!--Para audios em OGG-->
+        <source src="midia/HK-OST-Dirtmouth.wav" type="audio/wav"><!--para audios em WAV-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.</audio>p>
+    </audio>
+</body>
+</html>
